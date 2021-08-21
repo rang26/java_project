@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function Check() {
+
+		var id = document.getElementById("id"); //텍스트의 id값을 받는다
+		if (id != null) {
+			alert(id.value + " 아이디 입력을 확인했습니다.");
+
+		}
+	}		
+	function Check1(){
+		
+		test.submit();
+	}
+		
+		
+</script>	
+<style type="text/css">
+body {
+	background: yellow;
+}
+
+#b1 {
+	background-color: pink;
+}
+
+#b2 {
+	background-color: pink;
+}
+</style>
+</head>
+<body>
+	<h3>장바구니</h3>
+	<form id="test" action="basket2.jsp">
+		<table>
+			<tr>
+				<td>내 아이디: <input type="text" id="id" name="id">
+				</td>
+				<td><input type="button" value="아이디 입력 확인" id=b1
+					onclick="Check()"></td>
+			</tr>
+			<tr>
+				<td>상품 아이디: <input type="text" id="sid" name="sid">
+				</td>
+			</tr>
+			<tr>
+				<td>상품 가격: <input type="text" id="pay" name="pay">
+				</td>
+			</tr>
+			<tr>
+				<td>상품 수량: <input type="text" id="qu" name="qu">
+				</td>
+			</tr>
+		</table>
+		<input type="button" value="장바구니로 저장" id=b2 onclick="Check1()">
+	</form>
+</body>
+</html>
